@@ -1,7 +1,5 @@
 const express = require ("express");
-const { homedir } = require("os");
 const app = express ();
-
 const path = require("path");
 
 app.use (express.static ("public"));

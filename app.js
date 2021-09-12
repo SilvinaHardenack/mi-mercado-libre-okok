@@ -10,6 +10,6 @@ app.get (
     res.sendFile (path.resolve ("./views/home.html"));
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('App listening on port http://localhost:3000/');
 });
